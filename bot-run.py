@@ -29,6 +29,11 @@ def get_random_member(guild):
         return random.choice(human_members)
     return None
 
+@bot.command(name='shower')
+async def shower(ctx):
+    await daily_message.start()
+
+
 @tasks.loop(hours=24)
 async def daily_message():
     for guild in bot.guilds:
