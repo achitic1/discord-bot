@@ -65,5 +65,4 @@ async def hello(ctx):
 async def ping(ctx):
     await ctx.send("You know who else pings?")
 
-# Enter token from .env here
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
